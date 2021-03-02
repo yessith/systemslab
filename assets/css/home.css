@@ -1,8 +1,8 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color:#001524;
-  --secundary-color:#1961ab;
+  --primary-color:#0029cc;
+  --secundary-color:#031B7D;
   --text-color: #3a3a3a;
   --text-color-02: #fff;
 }
@@ -125,22 +125,22 @@ img {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 60px;
   z-index: 2;
   padding: 0 20px;
 }
 
 .header-menu__logo {
-  height: 50px;
+  height: 40px;
 }
 
 .header-menu {
   position: absolute;
-  top: 100px;
+  top: 60px;
   left: -100%;
   width: 100%;
   height: 300px ;
-  background-color: var(--secundary-color);
+  background-color: var(--primary-color);
   transition: .6s;
   z-index: 1;
   display: flex;
@@ -288,12 +288,8 @@ img {
   grid-gap: 10px;
 }
 
-.origin-shop__carousel {
-  position: relative;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  height: 500px;
+.origin-shop__carousel__header {
+  height: 523px;
 }
 
 .origin-shop__carousel__radio {
@@ -404,6 +400,15 @@ img {
   transform: translateX(-300%);
 }
 
+.origin-aside {
+  background-color: var(--secundary-color);
+}
+
+.origin-aside__title {
+  margin: 10px 0;
+  color: var(--text-color-02);
+}
+
 .origin-aside__list {
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
@@ -411,22 +416,14 @@ img {
 }
 
 .origin-aside__list__items {
+  position: relative;
   height: 80px;
   display: flex;
   justify-content: center;
-  transition: .5s ease;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -ms-transition: .5s ease;
-  -o-transition: .5s ease;
-}
-
-.origin-aside__list__items:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .origin-aside__list__items--link {
-  color: var(--text-color);
+  color: var(--text-color-02);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -434,18 +431,24 @@ img {
   align-items: center;
 }
 
+.origin-aside__list__items--link span {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
 .origin-aside__list__items--ico {
-  font-size: 4rem;
+  font-size: 3rem;
+  margin: 0 20px;
 }
 
 /*========== STYLE SECTION COVER ==========*/
 
 .origin-header,
-.origin-cover,
+.origin-cover__container,
 .origin-services__container,
 .origin-shop__articles,
 .origin-shop__category,
-.origin-footer {
+.origin-footer__container {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
@@ -465,14 +468,13 @@ img {
   position: relative;
   background-color:  rgb(255, 255, 255);
   /* background: linear-gradient(to bottom, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%); */
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
-.origin-cover {
+.origin-cover__container {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  min-height: 100vh;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -495,7 +497,7 @@ img {
 
 .origin-cover__cta__title,
 .origin-cover__cta__text {
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .origin-cover__cta__text {
@@ -525,6 +527,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .origin-cover__business span {
@@ -578,6 +581,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: var(--secundary-color);
+  color: var(--text-color-02);
 }
 
 .origin-services__container {
@@ -676,18 +681,17 @@ img {
 }
 
 .origin-shop__category__container {
-  background-color: #1961ab;
-  margin-top: 20px;
+  background-color: var(--secundary-color);
 }
 
 .origin-shop__category {
-  margin-bottom: 80px;
-  height: 150px;
+  height: 100px;
   position: relative;
   display: flex;
   overflow-x: auto;
   scrollbar-color: transparent transparent;
   scrollbar-width: none ;
+  margin-bottom: 15px;
 }
 
 .origin-shop__category__content {
@@ -714,6 +718,7 @@ img {
 }
 
 /*========== STYLE SECTION SHOP CAROUSEL ==========*/
+.origin-shop__carousel__header,
 .origin-shop__carousel {
   position: relative;
   overflow: hidden;
@@ -955,65 +960,54 @@ img {
 }
 
 /*========== STYLE SECTION FOOTER ==========*/
-.main-scroll__box__footer {
-  background: linear-gradient(to bottom, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+.origin-footer {
+  background-color: var(--secundary-color);
 }
 
-.origin-footer {
+.origin-footer__container {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   align-items: center;
   justify-content: center;
-  padding-top: 100px;
+  margin-top: 20px;
 
 }
-
-.main-scroll__box__footer--container {
-  height: 300px;
-  display: grid;
-  grid-template-rows: 30px 1fr;
-}
-
-.main-scroll__box__footer--logo {
-  width: 111px;
-  cursor: pointer;
-}
-
-.main-scroll__box__footer--logo,
-.main-scroll__box__footer--title {
-  justify-self: center;
-}
-
-.main-scroll__box__footer--text {
-  display: flex;
-  align-items: center;
-}
-
-.main-scroll__box__footer--content,
-.main-scroll__box__footer--list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.main-scroll__box__footer--list {
-  height: 100%;
-  justify-content: space-evenly;
-}
-
-.main-scroll__box__footer--list--items--link {
-  color: var(--text-color);
-  font-size: inherit;
-}
-
 
 /* ==== MEDIA QUERIES ==== */
 
 @media only screen and (min-width : 700px) {
-
+/*========== STYLE SECTION ORIGIN HEADER ==========*/
   .origin-header {
     grid-template-columns: 1fr 300px;
   }
+
+  .origin-aside__list {
+    display: initial;
+  }
+
+  .origin-aside__list__items:hover {
+    box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .origin-aside__list__items::after {
+    content: "\27A4";
+    right: 20px;
+    color: var(--text-color-02);
+    font-size: 2rem;
+    top: 28px;
+    position: absolute;
+  }
+
+  .origin-aside__list__items,
+  .origin-aside__list__items--link {
+    justify-content: initial;
+  }
+
+  .origin-aside__list__items--link {
+    flex-direction: row;
+    width: 100%;
+  }
+
 }
 
 @media only screen and (min-width : 800px) {
@@ -1051,7 +1045,7 @@ img {
     }
 
     /*========== STYLE SECTION COVER ==========*/
-  .origin-cover {
+  .origin-cover__container {
     grid-template-columns: 1fr 1fr;
   }
 }
