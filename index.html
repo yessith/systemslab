@@ -38,12 +38,12 @@
       </ul>
       <button class="header-menu__cta__btn"><a href="">whatsapp</a></button>
     </nav>
-    <div class="header-menu__contact">
+    <button class="header-menu__contact__btn">
       <a class="header-menu__contact__link" href="">
         <span>Contactanos</span>
         <i class="header-menu__contact--ico icofont-whatsapp"></i>
       </a>
-    </div>
+    </button>
     <button class="header-menu__button" id="button">
       <div class="heder-menu__button__burger">
         <span class="header-menu__button__burger--line"></span>
@@ -85,15 +85,15 @@
     </section>
     <section class="origin-header">
       <div class="origin-shop__carousel__header">
-        <input type="radio" class="origin-shop__carousel__radio radio__01" name="slider" id="slider--a" checked>
-        <input type="radio" class="origin-shop__carousel__radio radio__02" name="slider" id="slider--b">
-        <input type="radio" class="origin-shop__carousel__radio radio__03" name="slider" id="slider--c">
-        <input type="radio" class="origin-shop__carousel__radio radio__04" name="slider" id="slider--d">
+        <input type="radio" class="origin-shop__carousel__radio radio__01" name="slider" id="slider--01" checked>
+        <input type="radio" class="origin-shop__carousel__radio radio__02" name="slider" id="slider--02">
+        <input type="radio" class="origin-shop__carousel__radio radio__03" name="slider" id="slider--03">
+        <input type="radio" class="origin-shop__carousel__radio radio__04" name="slider" id="slider--04">
         <div class="origin-shop__carousel__navigation">
-          <label for="slider--a" class="carousel__slider--a"></label>
-          <label for="slider--b" class="carousel__slider--b"></label>
-          <label for="slider--c" class="carousel__slider--c"></label>
-          <label for="slider--d" class="carousel__slider--d"></label>
+          <label for="slider--01" class="carousel__slider--01"></label>
+          <label for="slider--02" class="carousel__slider--02"></label>
+          <label for="slider--03" class="carousel__slider--03"></label>
+          <label for="slider--04" class="carousel__slider--04"></label>
         </div>
         <div class="origin-shop__carousel__slider slider__img--01">
           <div class="origin-shop__carousel__slider--details">
@@ -125,37 +125,37 @@
         <ul class="origin-aside__list">
           <li class="origin-aside__list__items">
             <a class="origin-aside__list__items--link" href="">
-              <i class="origin-aside__list__items--ico icofont-responsive"></i>
+              <i class="origin-aside__list__items--ico icofont-code"></i>
               <span>Services-01</span>
             </a>
           </li>
           <li class="origin-aside__list__items">
             <a class="origin-aside__list__items--link" href="">
-              <i class="origin-aside__list__items--ico icofont-responsive"></i>
+              <i class="origin-aside__list__items--ico icofont-automation"></i>
               <span>Services-02</span>
             </a>
           </li>
           <li class="origin-aside__list__items">
             <a class="origin-aside__list__items--link" href="">
-              <i class="origin-aside__list__items--ico icofont-responsive"></i>
+              <i class="origin-aside__list__items--ico icofont-settings-alt"></i>
               <span>Services-03</span>
             </a>
           </li>
           <li class="origin-aside__list__items">
             <a class="origin-aside__list__items--link" href="">
-              <i class="origin-aside__list__items--ico icofont-responsive"></i>
+              <i class="origin-aside__list__items--ico icofont-wifi-alt"></i>
               <span>Services-04</span>
             </a>
           </li>
           <li class="origin-aside__list__items">
             <a class="origin-aside__list__items--link" href="">
-              <i class="origin-aside__list__items--ico icofont-responsive"></i>
+              <i class="origin-aside__list__items--ico icofont-ui-video"></i>
               <span>Services-05</span>
             </a>
           </li>
           <li class="origin-aside__list__items">
             <a class="origin-aside__list__items--link" href="">
-              <i class="origin-aside__list__items--ico icofont-responsive"></i>
+              <i class="origin-aside__list__items--ico icofont-users-alt-1"></i>
               <span>Services-06</span>
             </a>
           </li>
@@ -316,38 +316,44 @@
     <section class="origin-shop">
       <h2 class="scroll-content to-top origin-shop__title">Productos Destacadas</h2>
       <div class="origin-shop__articles">
-        <div class="origin-shop__carousel">
-          <input type="radio" class="origin-shop__carousel__radio radio__01" name="slider" id="slider--01" checked>
-          <input type="radio" class="origin-shop__carousel__radio radio__02" name="slider" id="slider--02">
-          <input type="radio" class="origin-shop__carousel__radio radio__03" name="slider" id="slider--03">
-          <input type="radio" class="origin-shop__carousel__radio radio__04" name="slider" id="slider--04">
-          <div class="origin-shop__carousel__navigation">
-            <label for="slider--01" class="carousel__slider--01"></label>
-            <label for="slider--02" class="carousel__slider--02"></label>
-            <label for="slider--03" class="carousel__slider--03"></label>
-            <label for="slider--04" class="carousel__slider--04"></label>
-          </div>
-          <div class="origin-shop__carousel__slider slider__img--01">
-            <div class="origin-shop__carousel__slider--details">
-              <h2 class="origin-shop__carousel__slider--title">Css Based slider 01</h2>
+        <div class="origin-shop__articles__grid">
+          <div class="origin-shop__articles__container">
+            <figure class="origin-shop__articles__container--img">
+              <img src="./assets/img/producto-01.jpg" alt="Hamburguesa doble">
+            </figure>
+            <div class="origin-shop__articles__container--details">
+              <h3>Portatil HP 240</h3>
+              <span>$1.964.000</span>
               <button class="origin-shop__articles__container--btn"><a href="">Ver Más</a></button>
             </div>
           </div>
-          <div class="origin-shop__carousel__slider slider__img--02">
-            <div class="origin-shop__carousel__slider--details">
-              <h2 class="origin-shop__carousel__slider--title">Css Based slider 02</h2>
+          <div class="origin-shop__articles__container">
+            <figure class="origin-shop__articles__container--img">
+              <img src="./assets/img/producto-02.jpg" alt="Hamburguesa doble">
+            </figure>
+            <div class="origin-shop__articles__container--details">
+              <h3>PC Gamer Thermaltake</h3>
+              <span>$1.964.000</span>
               <button class="origin-shop__articles__container--btn"><a href="">Ver Más</a></button>
             </div>
           </div>
-          <div class="origin-shop__carousel__slider slider__img--03">
-            <div class="origin-shop__carousel__slider--details">
-              <h2 class="origin-shop__carousel__slider--title">Css Based slider 03</h2>
+          <div class="origin-shop__articles__container">
+            <figure class="origin-shop__articles__container--img">
+              <img src="./assets/img/producto-03.jpg" alt="Hamburguesa doble">
+            </figure>
+            <div class="origin-shop__articles__container--details">
+              <h3>Fuente De Poder 450w</h3>
+              <span>$190.000</span>
               <button class="origin-shop__articles__container--btn"><a href="">Ver Más</a></button>
             </div>
           </div>
-          <div class="origin-shop__carousel__slider slider__img--04">
-            <div class="origin-shop__carousel__slider--details">
-              <h2 class="origin-shop__carousel__slider--title">Css Based slider 04</h2>
+          <div class="origin-shop__articles__container ">
+            <figure class="origin-shop__articles__container--img">
+              <img src="./assets/img/producto-04.jpg" alt="Hamburguesa doble">
+            </figure>
+            <div class="origin-shop__articles__container--details">
+              <h3>Teclado Gaming Logitech G213</h3>
+              <span>$964.000</span>
               <button class="origin-shop__articles__container--btn"><a href="">Ver Más</a></button>
             </div>
           </div>
@@ -400,56 +406,51 @@
   <footer class="origin-footer">
   <div class="origin-footer__container">
     <div class="origin-footer__header">
-      <figure class="origin-footer__header__logo"><img src="" alt=""></figure>
-      <div class="origin-footer__header__social">
-        <ul class="origin-footer__social__list">
-          <li class="origin-footer__social__list--items">
-            <a class="origin-footer__social__list--items--link" href="">
-              <i class="origin-footer__social__list--items--link--ico"></i>
-            </a>
-          </li>
-          <li class="origin-footer__social__list--items">
-            <a class="origin-footer__social__list--items--link" href="">
-              <i class="origin-footer__social__list--items--link--ico"></i>
-            </a>
-          </li>
-          <li class="origin-footer__social__list--items">
-            <a class="origin-footer__social__list--items--link" href="">
-              <i class="origin-footer__social__list--items--link--ico"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <figure class="origin-footer__header__logo"><img src="./assets/img/logo.png" alt=""></figure>
+      <p class="origin-footer__header__texto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit similique totam recusandae numquam omnis itaque in quis.</p>
+      <ul class="origin-footer__social__list">
+        <li class="origin-footer__social__list--items">
+          <a class="origin-footer__social__list--items--link" href="">
+            <i class="icofont-facebook-messenger origin-footer__social__list--items--link--ico"></i>
+          </a>
+        </li>
+        <li class="origin-footer__social__list--items">
+          <a class="origin-footer__social__list--items--link" href="">
+            <i class="icofont-instagram origin-footer__social__list--items--link--ico"></i>
+          </a>
+        </li>
+        <li class="origin-footer__social__list--items">
+          <a class="origin-footer__social__list--items--link" href="">
+            <i class="icofont-envelope origin-footer__social__list--items--link--ico"></i>
+          </a>
+        </li>
+      </ul>
     </div>
     <div class="origin-footer__information">
       <div class="origin-footer__information__box">
-        <i class="origin-footer__information__box--ico"></i>
+        <i class="origin-footer__information__box--ico icofont-delivery-time"></i>
         <div class="origin-footer__information__box--text">
           <span><strong>Envio nacional</strong></span>
           <span>a toda colombia</span>
         </div>
       </div>
       <div class="origin-footer__information__box">
-        <i class="origin-footer__information__box--ico"></i>
+        <i class="origin-footer__information__box--ico icofont-live-support"></i>
         <div class="origin-footer__information__box--text">
-          <span><strong>Pago seguro</strong></span>
-          <span>en todos los metodos de pago</span>
+          <span><strong>Servicio tecnico</strong></span>
+          <span>y atencion especializada</span>
         </div>
       </div>
       <div class="origin-footer__information__box">
-        <i class="origin-footer__information__box--ico"></i>
+        <i class="origin-footer__information__box--ico icofont-pay"></i>
         <div class="origin-footer__information__box--text">
-          <span><strong>Servicio tecnico</strong></span>
-          <span>atencion especializada</span>
+          <span><strong>Pago seguro</strong></span>
+          <span>con cualquier metodo de pago</span>
         </div>
       </div>
     </div>
     <div class="origin-footer__information__b">
-      <div class="origin-footer__information__box">
-        <h3 class="origin-footer__information__box--title">About</h3>
-        <p class="origin-footer__information__box--texto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit similique totam recusandae numquam omnis itaque in quis.</p>
-      </div>
-      <div class="origin-footer__information__box">
+      <div class="origin-footer__information__box--content">
         <ul class="origin-footer__information__box--list">
           <li class="origin-footer__information__box--list--items">
             <a href="">Services</a>
@@ -465,19 +466,19 @@
           </li>
         </ul>
       </div>
-      <div class="origin-footer__information__box">
+      <div class="origin-footer__information__box--content">
         <ul class="origin-footer__information__box--list">
           <li class="origin-footer__information__box--list--items">
-            <a href="">Services</a>
+            <a href="">Términos y Condiciones</a>
           </li>
           <li class="origin-footer__information__box--list--items">
-            <a href="">Services</a>
+            <a href="">Preguntas Frecuentes</a>
           </li>
           <li class="origin-footer__information__box--list--items">
-            <a href="">Services</a>
+            <a href="">Sitemap</a>
           </li>
           <li class="origin-footer__information__box--list--items">
-            <a href="">Services</a>
+            <a href="">Privacy Policy</a>
           </li>
         </ul>
       </div>

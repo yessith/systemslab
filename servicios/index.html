@@ -18,7 +18,7 @@
   <header class="header">
     <figure class="header-menu__logo">
       <a href="../">
-        <img src="./assets/img/logo.svg" alt="systemlab-logo">
+        <img src="./assets/img/logo.png" alt="systemlab-logo">
       </a>
     </figure>
     <nav class="header-menu" id="menu">
@@ -33,10 +33,17 @@
           <a href="" class="header-menu__list__item--link">Shop</a>
         </li>
         <li class="header-menu__list__item">
-          <a href="" class="header-menu__list__item--link">Conacto</a>
+          <a href="" class="header-menu__list__item--link">Contacto</a>
         </li>
       </ul>
+      <button class="header-menu__cta__btn"><a href="">whatsapp</a></button>
     </nav>
+    <button class="header-menu__contact__btn">
+      <a class="header-menu__contact__link" href="">
+        <span>Contactanos</span>
+        <i class="header-menu__contact--ico icofont-whatsapp"></i>
+      </a>
+    </button>
     <button class="header-menu__button" id="button">
       <div class="heder-menu__button__burger">
         <span class="header-menu__button__burger--line"></span>
@@ -280,54 +287,88 @@
       </div>
     </section>
   </main>
-  <footer class="main-scroll__box__footer">
-  <div class="origin-footer">
-      <div class="main-scroll__box__footer--container">
-        <figure class="main-scroll__box__footer--logo">
-          <a href="index.html"><img src="./assets/img/logo.png" alt="logo"></a>
-        </figure>
-        <div class="main-scroll__box__footer--text">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus laudantium perspiciatis, possimus debitis voluptatem repellendus tenetur.</p>
-        </div>
+  <footer class="origin-footer">
+    <div class="origin-footer__container">
+      <div class="origin-footer__header">
+        <figure class="origin-footer__header__logo"><img src="./assets/img/logo.png" alt=""></figure>
+        <p class="origin-footer__header__texto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit similique totam recusandae numquam omnis itaque in quis.</p>
+        <ul class="origin-footer__social__list">
+          <li class="origin-footer__social__list--items">
+            <a class="origin-footer__social__list--items--link" href="">
+              <i class="icofont-facebook-messenger origin-footer__social__list--items--link--ico"></i>
+            </a>
+          </li>
+          <li class="origin-footer__social__list--items">
+            <a class="origin-footer__social__list--items--link" href="">
+              <i class="icofont-instagram origin-footer__social__list--items--link--ico"></i>
+            </a>
+          </li>
+          <li class="origin-footer__social__list--items">
+            <a class="origin-footer__social__list--items--link" href="">
+              <i class="icofont-envelope origin-footer__social__list--items--link--ico"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="main-scroll__box__footer--container">
-        <h3 class="main-scroll__box__footer--title">Servicios</h3>
-        <div class="main-scroll__box__footer--content">
-          <ul class="main-scroll__box__footer--list">
-            <li class="main-scroll__box__footer--list--items">
-              <a class="main-scroll__box__footer--list--items--link" href="http://" target="_blank">Servicios</a>
-            </li>
-            <li class="main-scroll__box__footer--list--items">
-              <a class="main-scroll__box__footer--list--items--link" href="http://" target="_blank">Proyetos</a>
-            </li>
-            <li class="main-scroll__box__footer--list--items">
-              <a class="main-scroll__box__footer--list--items--link" href="http://" target="_blank">Shop</a>
-            </li>
-            <li class="main-scroll__box__footer--list--items">
-              <a class="main-scroll__box__footer--list--items--link" href="http://" target="_blank">Contacto</a>
-            </li>
-          </ul>
+      <div class="origin-footer__information">
+        <div class="origin-footer__information__box">
+          <i class="origin-footer__information__box--ico icofont-delivery-time"></i>
+          <div class="origin-footer__information__box--text">
+            <span><strong>Envio nacional</strong></span>
+            <span>a toda colombia</span>
+          </div>
         </div>
-      </div>
-      <div class="main-scroll__box__footer--container">
-        <h3 class="main-scroll__box__footer--title">Contact</h3>
-        <div class="main-scroll__box__footer--content">
-          <ul class="main-scroll__box__footer--list">
-            <li class="main-scroll__box__footer--list--items">Tel: 000000</li>
-            <li class="main-scroll__box__footer--list--items">Email: tec.@tec.com</li>
-            <li class="main-scroll__box__footer--list--items">Dir: 25-A/45-B</li>
-          </ul>
-          <div class="main-scroll__box__social">
-            <div class="main-scroll__box__social--items">
-              <a href="http://" target="_blank" rel="noreferrer" class="main-scroll__box__social--items--link"><i class="icofont-instagram"></i></a>
-              <a href="http://" target="_blank" rel="noreferrer" class="main-scroll__box__social--items--link"><i class="icofont-facebook"></i></a>
-              <a href="http://" target="_blank" rel="noreferrer" class="main-scroll__box__social--items--link"><i class="icofont-youtube-play"></i></a>
-            </div>
+        <div class="origin-footer__information__box">
+          <i class="origin-footer__information__box--ico icofont-live-support"></i>
+          <div class="origin-footer__information__box--text">
+            <span><strong>Servicio tecnico</strong></span>
+            <span>y atencion especializada</span>
+          </div>
+        </div>
+        <div class="origin-footer__information__box">
+          <i class="origin-footer__information__box--ico icofont-pay"></i>
+          <div class="origin-footer__information__box--text">
+            <span><strong>Pago seguro</strong></span>
+            <span>con cualquier metodo de pago</span>
           </div>
         </div>
       </div>
-  </div>
-  </footer>
+      <div class="origin-footer__information__b">
+        <div class="origin-footer__information__box--content">
+          <ul class="origin-footer__information__box--list">
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Services</a>
+            </li>
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Services</a>
+            </li>
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Services</a>
+            </li>
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="origin-footer__information__box--content">
+          <ul class="origin-footer__information__box--list">
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Términos y Condiciones</a>
+            </li>
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Preguntas Frecuentes</a>
+            </li>
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Sitemap</a>
+            </li>
+            <li class="origin-footer__information__box--list--items">
+              <a href="">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </footer>
   <script src="./assets/js/servicios.js"></script>
 </body>
 </html>
