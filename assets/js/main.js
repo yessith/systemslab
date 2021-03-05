@@ -30,3 +30,43 @@
           }
         }
     });
+
+    /* SLIDER SHOW */
+     var slideIndex = 0;
+
+     var slideShow = () => {
+       var i;
+       var img = document.querySelectorAll('.origin-shop__carousel__slider')
+       var dots = document.getElementsByClassName("dot");
+
+       for(i = 0; i < img.length; i++) {
+         img[i].style.display = "none";
+       }
+
+       slideIndex++
+
+       if(slideIndex > img.length) {
+         slideIndex = 1
+        }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+       img[slideIndex -1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+
+       setTimeout(slideShow, 3000);
+    }
+    slideShow();
+
+    var currentSlide = (n) => {
+      var i;
+      var img = document.querySelectorAll('.origin-shop__carousel__slider')
+      for (i = 0; i < img.length; i++) {
+          img[i].style.display = "none";
+      }
+
+      slideIndex = n;
+      img[n-1].style.display = "block";
+    }
