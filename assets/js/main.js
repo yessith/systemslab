@@ -63,10 +63,17 @@
     var currentSlide = (n) => {
       var i;
       var img = document.querySelectorAll('.origin-shop__carousel__slider')
+      var dots = document.getElementsByClassName("dot");
+
       for (i = 0; i < img.length; i++) {
           img[i].style.display = "none";
       }
 
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
       slideIndex = n;
       img[n-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
     }
