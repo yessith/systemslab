@@ -52,11 +52,11 @@ var slideShow = () => {
   }
 
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" activo", "");
   }
 
   img[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " activo";
 
   setTimeout(slideShow, 4000);
 };
@@ -72,10 +72,10 @@ var currentSlide = (n) => {
   }
 
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" activo", "");
   }
 
   slideIndex = n;
   img[n - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " activo";
 };
