@@ -97,7 +97,6 @@ img {
   z-index: 2;
   padding: 0 20px;
   background-color: var(--primary-color);
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header-menu__logo {
@@ -109,7 +108,7 @@ img {
   top: 60px;
   left: -100%;
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: var(--primary-color);
   transition: .6s;
   z-index: 1;
@@ -263,6 +262,39 @@ img {
 .barba-left__box__text, .main-hero__contact__cover--text {
   padding: 0 20px;
   line-height: 1.5;
+}
+
+.barba-left__breadcrumb {
+  display: flex;
+}
+
+.barba-left__breadcrumb li {
+  padding-left: 30px;
+}
+
+.barba-left__breadcrumb li:first-child {
+  padding-left: 0;
+}
+
+.barba-left__breadcrumb li a {
+  position: relative;
+}
+
+.barba-left__breadcrumb li a::after {
+  content: "▶";
+  color: var(--text-color-02);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1px;
+  right: -20px;
+}
+
+.barba-left__breadcrumb li span {
+  font-size: 1.5rem;
+}
+
+.a {
+  line-height: 1.6;
 }
 
 .barba-left__details {
@@ -419,6 +451,10 @@ img {
   .box-07 {
     grid-row: 4/6;
     grid-column: 2/3;
+  }
+  .barba-left__breadcrumb {
+    align-self: flex-start;
+    margin-left: 20px;
   }
 }
 

@@ -97,6 +97,7 @@ img {
   z-index: 2;
   padding: 0 20px;
   background-color: var(--primary-color);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header-menu__logo {
@@ -580,6 +581,10 @@ img {
 .origin-services__box {
   display: flex;
   flex-direction: column;
+}
+
+.origin-cover__cta__text p, .origin-services__box p, .origin-project__box__content p {
+  line-height: 1.5;
 }
 
 .origin-services__box:nth-child(even) {
