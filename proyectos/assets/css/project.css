@@ -1,8 +1,8 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color: #031B7D;
-  --secundary-color: #eee;
+  --primary-color: #1a285c;
+  --secundary-color: #484b54;
   --text-color: #212429;
   --text-color-02: #fff;
 }
@@ -93,19 +93,15 @@ img {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   z-index: 2;
   padding: 0 20px;
   background-color: var(--primary-color);
 }
 
-.header-menu__logo {
-  height: 40px;
-}
-
 .header-menu {
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: -100%;
   width: 100%;
   height: 300px;
@@ -175,7 +171,7 @@ img {
   -o-border-radius: 4px;
   width: 150px;
   height: 40px;
-  background-color: var(--secundary-color);
+  background-color: var(--text-color-02);
 }
 
 .header-menu__contact__btn {
