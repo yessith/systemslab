@@ -1,7 +1,7 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color: #1a285c;
+  --primary-color: #081533;
   --secundary-color: #484b54;
   --text-color: #212429;
   --text-color-02: #fff;
@@ -181,11 +181,13 @@ img {
 
 .header-menu__contact__link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-menu__contact--ico {
-  font-size: 2.2rem;
-  color: #4caf50;
+  font-size: 2.5rem;
 }
 
 .header-menu__contact a, .header-menu__cta__btn a {
@@ -331,7 +333,7 @@ img {
 }
 
 .main-hero__services__box--content:hover {
-  background-color: rgba(238, 238, 238, 0.9);
+  background-color: rgba(72, 75, 84, 0.3);
 }
 
 .main-hero__services__box--img {
@@ -347,7 +349,7 @@ img {
   -o-border-radius: 50%;
 }
 
-.main-hero__services__box--content, .main-hero__contact__box a, .origin-shop__category__content {
+.main-hero__services__box--content, .main-hero__contact__box a {
   color: var(--text-color);
 }
 
@@ -402,19 +404,19 @@ img {
   font-size: 4rem;
 }
 
-.icofont-envelope {
-  color: #ffb300;
+.envelope {
+  color: #484b54;
 }
 
-.icofont-whatsapp {
+.ri-whatsapp-fill {
   color: #4caf50;
 }
 
-.icofont-facebook-messenger {
+.facebook {
   color: #0077f5;
 }
 
-.icofont-instagram {
+.ri-instagram-line {
   color: #e01d4e;
 }
 
@@ -426,12 +428,17 @@ img {
 
 .origin-shop__category {
   margin-bottom: 80px;
-  height: 150px;
+  height: 100px;
   position: relative;
   display: flex;
   overflow-x: auto;
   scrollbar-color: transparent transparent;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+  background-color: var(--secundary-color);
+}
+
+.origin-shop__category::-webkit-scrollbar {
+  background: transparent;
 }
 
 .origin-shop__category__content {
@@ -812,6 +819,12 @@ img {
   .main-hero {
     grid-template-columns: 1fr 1fr;
   }
+  .main-hero {
+    background-image: url(../img/slider.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -822,6 +835,7 @@ img {
   }
   .header-menu__contact__btn {
     display: initial;
+    width: 170px;
   }
   .header-menu__cta__btn, .header-menu__button {
     display: none;
@@ -861,9 +875,6 @@ img {
 @media only screen and (min-width: 1290px) {
   .main-hero__details__text {
     width: 60%;
-  }
-  .origin-shop__category {
-    overflow-x: initial;
   }
   .origin-shop__articles__grid .origin-shop__articles__container:nth-child(3) {
     margin: 0;

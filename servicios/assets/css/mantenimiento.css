@@ -1,7 +1,7 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color: #1a285c;
+  --primary-color: #081533;
   --secundary-color: #484b54;
   --text-color: #212429;
   --text-color-02: #fff;
@@ -320,19 +320,19 @@ img {
   font-size: 4rem;
 }
 
-.icofont-envelope {
-  color: #007bb5;
+.envelope {
+  color: #484b54;
 }
 
-.icofont-whatsapp {
+.ri-whatsapp-fill {
   color: #4caf50;
 }
 
-.icofont-facebook-messenger {
+.facebook {
   color: #0077f5;
 }
 
-.icofont-instagram {
+.ri-instagram-line {
   color: #e01d4e;
 }
 
@@ -400,6 +400,24 @@ img {
   background-position: center;
 }
 
+.barba-right__plus__title {
+  margin: 30px 0;
+}
+
+.barba-right__plus__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 20px;
+}
+
+.barba-right__plus__box {
+  padding: 0 20px;
+}
+
+.barba-right__plus__box--text {
+  margin-top: 10px;
+}
+
 /* ==== MEDIA QUERIES ==== */
 
 @media only screen and (min-width: 600px) {
@@ -435,5 +453,11 @@ img {
   .barba-left__details {
     margin-top: 0;
     padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .barba-right__plus__box {
+    padding-left: 0px;
   }
 }

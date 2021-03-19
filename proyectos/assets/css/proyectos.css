@@ -1,7 +1,7 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color: #1a285c;
+  --primary-color: #081533;
   --secundary-color: #484b54;
   --text-color: #212429;
   --text-color-02: #fff;
@@ -181,11 +181,13 @@ img {
 
 .header-menu__contact__link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-menu__contact--ico {
-  font-size: 2.2rem;
-  color: #4caf50;
+  font-size: 2.5rem;
 }
 
 .header-menu__contact a, .header-menu__cta__btn a {
@@ -252,7 +254,7 @@ img {
   padding-top: 80px;
 }
 
-.main-hero__contact__container {
+.main-hero__contact__container, .origin-footer__container {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
@@ -338,19 +340,19 @@ img {
   font-size: 4rem;
 }
 
-.icofont-envelope {
+.envelope {
+  color: #484b54;
+}
+
+.ri-whatsapp-fill {
   color: #4caf50;
 }
 
-.icofont-whatsapp {
-  color: #4caf50;
-}
-
-.icofont-facebook-messenger {
+.facebook {
   color: #0077f5;
 }
 
-.icofont-instagram {
+.ri-instagram-line {
   color: #e01d4e;
 }
 
@@ -545,6 +547,7 @@ img {
   }
   .header-menu__contact__btn {
     display: initial;
+    width: 170px;
   }
   .header-menu__cta__btn, .header-menu__button {
     display: none;

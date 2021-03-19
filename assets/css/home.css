@@ -1,7 +1,7 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color: #1a285c;
+  --primary-color: #081533;
   --secundary-color: #484b54;
   --text-color: #212429;
   --text-color-02: #fff;
@@ -181,11 +181,13 @@ img {
 
 .header-menu__contact__link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-menu__contact--ico {
-  font-size: 2.2rem;
-  color: #4caf50;
+  font-size: 2.5rem;
 }
 
 .header-menu__contact a, .header-menu__cta__btn a {
@@ -260,6 +262,10 @@ img {
   margin-bottom: 30px;
 }
 
+.origin-shop__category__container .origin-shop__category::-webkit-scrollbar {
+  background: transparent;
+}
+
 .origin-shop__category__content {
   display: flex;
   flex-shrink: 0;
@@ -268,10 +274,6 @@ img {
   align-items: center;
   padding: 15px;
   width: 165px;
-}
-
-.origin-shop__category__ico {
-  font-size: 3.5rem;
 }
 
 /*========== STYLE SECTION ORIGIN HEADER ==========*/
@@ -456,15 +458,15 @@ img {
 
 .origin-cover {
   margin-top: 30px;
-  background-image: url(../img/circle-04.png);
+  background-image: url(../img/slider.png);
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .origin-cover__container {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
+  height: 100vh;
   position: relative;
 }
 
@@ -539,11 +541,10 @@ img {
   align-self: end;
 }
 
-/* .origin-cover__background img,
-.origin-services__box__img img {
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,.5));
-} */
+.origin-cover__background img, .origin-services__box__img img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .5));
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .5));
+}
 
 /*========== STYLE SECTION SERVICES ==========*/
 
@@ -556,13 +557,19 @@ img {
 
 .origin-services__title {
   text-align: center;
-  height: 200px;
+  height: 330px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: var(--primary-color);
   color: var(--text-color-02);
   margin-bottom: 30px;
+}
+
+.origin-services__title p {
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .origin-services__container {
@@ -590,8 +597,14 @@ img {
 
 /*========== STYLE SECTION PROJECTS ==========*/
 
-.origin-project h2 {
+.origin-project__title {
+  display: flex;
+  justify-content: center;
+}
+
+.origin-project__title h2 {
   margin: 100px 0;
+  line-height: 1.5;
 }
 
 .origin-project__container {
@@ -611,7 +624,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgba(3, 27, 125, 0.6);
+  background-color: rgba(10, 50, 155, 0.3);
   opacity: 0;
   transition: opacity .5s ease;
   -webkit-transition: opacity .5s ease;
@@ -727,7 +740,7 @@ img {
 
 /* ==== STYLES EFECTO SCROLL ==== */
 
-.origin-cover__cta__content, .origin-services__box {
+.origin-cover__cta__content, .origin-services__box, .origin-project__title {
   overflow: hidden;
 }
 
@@ -968,11 +981,11 @@ img {
   font-size: 4rem;
 }
 
-.envelope {
-  color: #ffb300;
+.envelope, .customer {
+  color: #484b54;
 }
 
-.icofont-whatsapp {
+.ri-whatsapp-fill {
   color: #4caf50;
 }
 
@@ -986,7 +999,7 @@ img {
 }
 
 .contact-img {
-  background-image: url(../img/support-cta.png);
+  background-image: url(../img/Sending.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1007,7 +1020,7 @@ img {
     height: 80px;
   }
   .origin-aside__list__items--ico {
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .origin-aside__list__items:hover {
     box-shadow: inset 0 -2px 0 0 rgba(255, 255, 255, 0.5);
@@ -1037,6 +1050,7 @@ img {
   }
   .header-menu__contact__btn {
     display: initial;
+    width: 170px;
   }
   .header-menu__cta__btn, .header-menu__button {
     display: none;
@@ -1055,6 +1069,10 @@ img {
   /*========== STYLE SECTION COVER ==========*/
   .origin-cover__container {
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .origin-services__title p {
+    width: 50%;
   }
 }
 
@@ -1066,14 +1084,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
   .contact-img {
-    background-size: initial;
     height: initial;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .header-menu {
-    width: 50%;
   }
 }
 
@@ -1102,5 +1113,17 @@ img {
   }
   .origin-project__box--06 {
     grid-area: 2/4/3/4;
+  }
+  .origin-project__title h2 {
+    width: 50%;
+  }
+  .contact-img {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header-menu {
+    width: 50%;
   }
 }
