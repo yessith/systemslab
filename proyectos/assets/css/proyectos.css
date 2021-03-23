@@ -1,7 +1,7 @@
 /*===== VARIABLES =====*/
 
 :root {
-  --primary-color: #081533;
+  --primary-color: #1962ab;
   --secundary-color: #484b54;
   --text-color: #212429;
   --text-color-02: #fff;
@@ -96,7 +96,7 @@ img {
   height: 100px;
   z-index: 2;
   padding: 0 20px;
-  background-color: var(--primary-color);
+  background-color: var(--text-color-02);
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -135,35 +135,6 @@ img {
   color: var(--text-color-02);
 }
 
-.header-menu__list__item:hover::before {
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-}
-
-.header-menu__list__item::before {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  width: 100%;
-  height: 3px;
-  display: block;
-  background-image: linear-gradient(to right, #EADFDF 0%, #ECE2DF 100%);
-  transition: .6s;
-  -webkit-transition: .6s;
-  -moz-transition: .6s;
-  -ms-transition: .6s;
-  -o-transition: .6s;
-  transform-origin: center;
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-}
-
 .header-menu__cta__btn, .header-menu__contact__btn {
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -172,7 +143,7 @@ img {
   -o-border-radius: 4px;
   width: 150px;
   height: 40px;
-  background-color: var(--text-color-02);
+  background-color: var(--primary-color);
 }
 
 .header-menu__contact__btn {
@@ -180,17 +151,21 @@ img {
 }
 
 .header-menu__contact__link {
-  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.header-menu__contact--ico {
+.header-menu__contact__link .header-menu__contact--ico {
+  color: var(--text-color-02);
   font-size: 2.5rem;
 }
 
-.header-menu__contact a, .header-menu__cta__btn a {
+.header-menu__cta__btn {
+  background-color: var(--text-color-02);
+}
+
+.header-menu__cta__btn a {
   color: var(--text-color);
 }
 
@@ -214,7 +189,7 @@ img {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background-color: var(--text-color-02);
+  background-color: var(--primary-color);
   transition: .6s;
   -webkit-transition: .6s;
   -moz-transition: .6s;
@@ -426,7 +401,7 @@ img {
 /*========== STYLE SECTION FOOTER ==========*/
 
 .origin-footer {
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
 }
 
 .origin-footer__container {
@@ -450,7 +425,7 @@ img {
 }
 
 .origin-footer__header__logo {
-  height: 40px;
+  height: 80px;
 }
 
 .origin-footer__header__texto {
@@ -544,6 +519,9 @@ img {
   .header {
     display: grid;
     grid-template-columns: auto 1fr auto;
+  }
+  .header-menu__list__item--link {
+    color: var(--text-color);
   }
   .header-menu__contact__btn {
     display: initial;
