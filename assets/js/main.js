@@ -1,8 +1,10 @@
 /*  VARIABLES */
-let $button = document.getElementById("button");
-let $menu = document.getElementById("menu");
-let $link = document.querySelectorAll(".header-menu__list__item--link");
-let $line = document.querySelector(".header-menu__button__burger--line");
+const $button = document.getElementById("button");
+const $menu = document.getElementById("menu");
+const $link = document.querySelectorAll(".header-menu__list__item--link");
+const $line = document.querySelector(".header-menu__button__burger--line");
+var img = document.querySelectorAll(".origin-shop__carousel__slider");
+var dots = document.getElementsByClassName("dot");
 
 /* SHOW MENU */
 $button.addEventListener("click", () => {
@@ -37,10 +39,6 @@ window.addEventListener("scroll", () => {
 var slideIndex = 0;
 
 var slideShow = () => {
-  var i;
-  var img = document.querySelectorAll(".origin-shop__carousel__slider");
-  var dots = document.getElementsByClassName("dot");
-
   for (i = 0; i < img.length; i++) {
     img[i].style.display = "none";
   }
@@ -63,10 +61,6 @@ var slideShow = () => {
 slideShow();
 
 var currentSlide = (n) => {
-  var i;
-  var img = document.querySelectorAll(".origin-shop__carousel__slider");
-  var dots = document.getElementsByClassName("dot");
-
   for (i = 0; i < img.length; i++) {
     img[i].style.display = "none";
   }
